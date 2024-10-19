@@ -18,6 +18,11 @@ import java.util.*;
  * 输出：["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
  * 
  */
+
+/**
+ * 这是来自STEABEN的修改！！！！！
+ */
+
 class Solution14 {
     static final int SEG_COUNT = 4;
     List<String> ans = new ArrayList<String>();
