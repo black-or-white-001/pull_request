@@ -29,6 +29,9 @@ class Solution14 {
     int[] segments = new int[SEG_COUNT];
 
     public List<String> restoreIpAddresses(String s) {
+        if (s.length() < SEG_COUNT || s.length() > SEG_COUNT * 3) {
+            return ans;  // 如果字符串长度小于4或大于12，不可能形成有效的IP地址
+        }
         segments = new int[SEG_COUNT];
         dfs(s, 0, 0);
         return ans;
